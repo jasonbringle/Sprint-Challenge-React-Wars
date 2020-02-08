@@ -21,9 +21,9 @@ const App = () => {
   axios
     .get(`https://swapi.co/api/people`)
     .then(response => setCharData(response.data.results))
-    .catch(console.log('error!!!'))
+    .catch(error => console.log('error!!!'))
  },[])
- console.log(charData)
+//  console.log(charData)
     
   return (
     <Div>
