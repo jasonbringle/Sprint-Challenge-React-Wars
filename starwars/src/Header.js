@@ -19,6 +19,11 @@ const H1 = styled.h1`
   padding-left: 1rem;
 `;
 
+const H5 = styled.h5`
+  /* font-size: 3.5rem; */
+  padding-left: 3rem;
+`;
+
 const Header = props => {
   return (
     <Container>
@@ -27,6 +32,7 @@ const Header = props => {
         src="https://i.dlpng.com/static/png/6812157_preview.png"
       />
       <H1>PEEPS!</H1>
+      <H5>....and doggos</H5>
     </Container>
   );
 };
