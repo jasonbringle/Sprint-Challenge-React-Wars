@@ -1,4 +1,4 @@
-import React, { useEffect,useState} from 'react';
+import React from 'react';
 import styled from 'styled-components'
 const CharCont = styled.div``
 const Card = styled.div``
@@ -15,13 +15,13 @@ const Character = props =>{
                     <h2>{props.charData.name}</h2>
                 </Name>
                 <Height>
-                    <p>{}</p>
+                    <p>{props.charData.height}</p>
                 </Height>
                 <Mass>
-                    <p>{}</p>
+                    <p>{props.charData.mass}</p>
                 </Mass>
                 <Gender>
-                    <p>{}</p>
+                    <p>{props.charData.gender}</p>
                 </Gender>
             </Card>
         </CharCont>

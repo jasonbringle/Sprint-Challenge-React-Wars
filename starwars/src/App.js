@@ -27,7 +27,7 @@ const App = () => {
     
   return (
     <Div>
-      {/* <Header/> */}
+      <Header/>
         <Container>
           {charData.map((char,index)=>{
             return (<Character
