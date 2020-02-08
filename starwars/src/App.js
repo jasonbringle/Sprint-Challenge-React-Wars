@@ -2,6 +2,17 @@ import React, { useEffect,useState} from 'react';
 import axios from 'axios'
 import styled from 'styled-components'
 import './App.css';
+import Character from "./Character"
+import Header from './Header'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+const Div = styled.div``
 
 const App = () => {
  const [charData,setCharData] = useState([])
@@ -15,9 +26,15 @@ const App = () => {
  console.log(charData)
     
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
+    <Div>
+      <Header/>
+        <Container>
+          {charData.map((char,index)=>{
+            return (<Character
+            key={index} charData={char} setCharData={setCharData}/>)
+          })}
+        </Container>
+    </Div>
   );
 }
 
